@@ -1,0 +1,7 @@
+Select w.id
+From Weather w
+Where w.temperature > (
+    select Max(Temperature)
+    From Weather
+    where (DATEDIFF(dayofyear, recordDate, w.recordDate)) = 1
+)
