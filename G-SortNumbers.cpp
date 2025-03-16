@@ -35,5 +35,22 @@ int main()
           cout << "\n\n";
           
           cout << a << "\n" << b << "\n" << c;
+
+ /*
+          # Another Solution using min and max
+          int a, b, c, mx = INT_MIN, mn = INT_MAX;
+          cin >> a >> b >> c;
+          
+          mn = min({a, b, c});
+          mx = max({a, b, c});
+
+          cout << mn << "\n";
+          
+          cout << a + b + c - mn - mx << "\n";
+          
+          cout << mx << "\n\n";
+          
+          cout << a << "\n" << b << "\n" << c;
+ */
           return 0;
 }
